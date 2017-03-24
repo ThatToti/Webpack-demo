@@ -1,8 +1,10 @@
 {
-  "scripts":{
-    "build":"webpack --config webpack.config.js"
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "dev":"webpack-dev-server --open"
   },
   "dependencies": {
-    "webpack": "^2.3.1"
+    "webpack": "^2.3.1",
+    "webpack-dev-server": "^2.4.2"
   }
 }

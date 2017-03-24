@@ -1,9 +1,26 @@
 var path=require('path');
 
-module.exports={
-    entry:'./index.js',
+const proconfig={
+    
+    entry:{
+        index:'./index.js',
+        library:'./webpackNumber.js'
+    },
     output:{
-        filename:'bundle.js',
-        path:path.resolve(__dirname,'dist')
+        filename:'[name].bundle.js',
+        path:path.resolve(__dirname,'dist'),
+        library:'webpackNumber',
+        libraryTarget:'commonjs'
+    },
+    devtool:'cheap-eval-source-map',
+    devServer:{
+        contentBase:path.join(__dirname,'dist'),
+        compress:true,
+        port:9000
+    },
+    externals:{
+        lodash:'lodash'
     }
-};
+}
+
+module.exports=proconfig;
