@@ -1,0 +1,8 @@
+{
+  "scripts":{
+    "build":"webpack --config webpack.config.js"
+  },
+  "dependencies": {
+    "webpack": "^2.3.1"
+  }
+}
