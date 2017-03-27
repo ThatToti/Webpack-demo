@@ -12,6 +12,18 @@ const proconfig={
         library:'webpackNumber',
         libraryTarget:'commonjs'
     },
+    module:{
+        rules:[
+            {
+                test:/\.tsx?$/,
+                loader:'ts-loader',
+                exclude:/node_modules/
+            }
+        ]
+    },
+    resolve:{
+        extensions:['.tsx','.ts','.js']
+    },
     devtool:'cheap-eval-source-map',
     devServer:{
         contentBase:path.join(__dirname,'dist'),

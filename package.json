@@ -1,9 +1,11 @@
 {
   "scripts": {
     "build": "webpack --config webpack.config.js",
-    "dev":"webpack-dev-server --open"
+    "dev": "webpack-dev-server --open"
   },
   "dependencies": {
+    "ts-loader": "^2.0.3",
+    "typescript": "^2.2.1",
     "webpack": "^2.3.1",
     "webpack-dev-server": "^2.4.2"
   }
